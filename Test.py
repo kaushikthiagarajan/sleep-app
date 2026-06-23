@@ -2,7 +2,7 @@
 
 def calculate_average(numbers):
     # ERROR 1 (SyntaxError): Missing a colon at the end of the 'if' statement
-    if len(numbers) == 0
+    if len(numbers) == 0:
         return 0
     
     total = 0
@@ -14,7 +14,7 @@ def calculate_average(numbers):
 
 def get_user_scores():
     # Simulated data fetched from an input source
-    return [85, 92, "78", 90, 65]
+    return [85, 92, 78, 90, 65]
 
 def display_top_scores(scores):
     print("Top Scores:")
@@ -23,6 +23,7 @@ def display_top_scores(scores):
     while i < len(scores):
         if scores[i] >= 80:
             print(f"Score: {scores[i]}")
+        i += 1
 
 if __name__ == "__main__":
     user_scores = get_user_scores()
